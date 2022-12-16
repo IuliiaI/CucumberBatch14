@@ -18,7 +18,9 @@ import org.junit.runner.RunWith;
         //to remove irrelavant information from console, you need to set monochrome to true
         monochrome = true,
         //pretty keywords prints the steps in the console to increase readability
-        plugin = {"pretty"}
+        //to generate the reports we need plugin of runner class
+        plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json",
+                "rerun:target/failed.txt"}
 )
 
 
